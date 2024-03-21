@@ -1,0 +1,83 @@
+
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+
+.App-header {
+  background-color: #0056b3;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  padding: 5px;
+}
+
+
+.todo-list {
+  padding-left: 3em;
+  margin-top: 20px; 
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap; /* Allow items to wrap into multiple lines */
+}
+
+.todo-item {
+  width: calc(50% - 10px); /* Set width for each list item (minus margin) */
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+/* Media query for two-column layout */
+@media (min-width: 600px) { /* Adjust the breakpoint as needed */
+  .todo-item {
+    width: calc(50% - 20px); /* Adjust width for each list item in two-column layout */
+  }
+}
+
+.todo-item:hover {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+}
+
+.input-container{
+  width: calc(100% - 100px); /* Adjust input width */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px; 
+  margin-bottom: 5px;
+}
+
+
+
+.add-button, .clear-button{
+  padding: 10px 20px;
+  color: #0056b3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 0 5px 0 5px;
+}
+
+.add-button:hover, .clear-button:hover {
+  background-color: #0056b3;
+  color: white;
+  border: 1px solid #ccc;
+  
+}
